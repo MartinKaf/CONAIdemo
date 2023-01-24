@@ -1,0 +1,85 @@
+<ul class="graph-diagram-markup" data-internal-scale="1.8" data-external-scale="1">
+  <li class="node" data-node-id="0" data-x="0" data-y="0">
+    <span class="caption">Exterior</span>
+  </li>
+  <li class="node" data-node-id="1" data-x="226.99999999999994" data-y="0">
+    <span class="caption">Hall</span>
+  </li>
+  <li class="node" data-node-id="2" data-x="226.99999999999994" data-y="-170.3888888888889">
+    <span class="caption">Lobby</span>
+  </li>
+  <li class="node" data-node-id="3" data-x="91.87974717881941" data-y="-132.9017333984375">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="4" data-x="226.99999999999994" data-y="180.43159993489581">
+    <span class="caption">Stairs</span>
+  </li>
+  <li class="node" data-node-id="5" data-x="430.8797471788194" data-y="0">
+    <span class="caption">Hall</span>
+  </li>
+  <li class="node" data-node-id="6" data-x="621.4778984917535" data-y="0">
+    <span class="caption">Corridor</span>
+  </li>
+  <li class="node" data-node-id="7" data-x="621.4778984917535" data-y="-170.3888888888889">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="9" data-x="621.4778984917535" data-y="180.43159993489581">
+    <span class="caption">Storage</span>
+  </li>
+  <li class="node" data-node-id="10" data-x="505.2378607855908" data-y="-132.9017333984375">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="11" data-x="226.99999999999994" data-y="379.2780999077688">
+    <span class="caption">Corridor</span>
+  </li>
+  <li class="node" data-node-id="12" data-x="91.87974717881941" data-y="518.5278422037761">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="13" data-x="226.99999999999994" data-y="560.5498352050777">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="14" data-x="0" data-y="422.04063924153627">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="15" data-x="482.5423380533854" data-y="444.98500908745615">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="16" data-x="363.24176703559027" data-y="518.5278422037761">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="17" data-x="0" data-y="277.06061999003106">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="18" data-x="333.49916585286456" data-y="249.86737251281752">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="20" data-x="91.87974717881941" data-y="200.82654825846353">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="21" data-x="571.7150980631513" data-y="339.4940863715279">
+    <span class="caption">Kitchen</span>
+  </li>
+  <li class="node" data-node-id="22" data-x="-204.0709771050347" data-y="316.13197580973275">
+    <span class="caption">ConferenceRoom</span>
+  </li>
+  <li class="relationship" data-from="0" data-to="1"></li>
+  <li class="relationship" data-from="1" data-to="2"></li>
+  <li class="relationship" data-from="1" data-to="3"></li>
+  <li class="relationship" data-from="1" data-to="4"></li>
+  <li class="relationship" data-from="1" data-to="5"></li>
+  <li class="relationship" data-from="5" data-to="6"></li>
+  <li class="relationship" data-from="6" data-to="7"></li>
+  <li class="relationship" data-from="6" data-to="9"></li>
+  <li class="relationship" data-from="6" data-to="10"></li>
+  <li class="relationship" data-from="4" data-to="11"></li>
+  <li class="relationship" data-from="11" data-to="12"></li>
+  <li class="relationship" data-from="11" data-to="13"></li>
+  <li class="relationship" data-from="11" data-to="14"></li>
+  <li class="relationship" data-from="11" data-to="15"></li>
+  <li class="relationship" data-from="11" data-to="16"></li>
+  <li class="relationship" data-from="11" data-to="17"></li>
+  <li class="relationship" data-from="11" data-to="18"></li>
+  <li class="relationship" data-from="11" data-to="20"></li>
+  <li class="relationship" data-from="11" data-to="21"></li>
+  <li class="relationship" data-from="11" data-to="22"></li>
+</ul>

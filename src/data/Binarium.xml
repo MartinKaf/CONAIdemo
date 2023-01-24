@@ -1,0 +1,217 @@
+<ul class="graph-diagram-markup" data-internal-scale="1.87" data-external-scale="1">
+  <li class="node" data-node-id="0" data-x="-413.59988720645094" data-y="-29.03868750806118">
+    <span class="caption">Exterior</span>
+  </li>
+  <li class="node" data-node-id="1" data-x="61.403850690520905" data-y="-4.997542580181257">
+    <span class="caption">Hall</span>
+  </li>
+  <li class="node" data-node-id="2" data-x="-208.70064090903284" data-y="-29.03868750806118">
+    <span class="caption">WaitingRoom</span>
+  </li>
+  <li class="node" data-node-id="3" data-x="-208.70064090903284" data-y="-230.5211605175984">
+    <span class="caption">Reception</span>
+  </li>
+  <li class="node" data-node-id="4" data-x="212.01622882373744" data-y="-129.25184527083798">
+    <span class="caption">Corridor</span>
+  </li>
+  <li class="node" data-node-id="5" data-x="212.01622882373744" data-y="29.449840913999253">
+    <span class="caption">Stairs</span>
+  </li>
+  <li class="node" data-node-id="6" data-x="334.12078666975907" data-y="-49.32107329096761">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="7" data-x="61.403850690520905" data-y="128.20366334150182">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="8" data-x="-65.16335096716266" data-y="88.74311459498699">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="9" data-x="747.9603516200827" data-y="-230.5211605175984">
+    <span class="caption">MeetingRoom</span>
+  </li>
+  <li class="node" data-node-id="10" data-x="1007.0541819446522" data-y="-197.5515885967905">
+    <span class="caption">MeetingRoom</span>
+  </li>
+  <li class="node" data-node-id="11" data-x="469.0155198404467" data-y="-230.5211605175984">
+    <span class="caption">MeetingRoom</span>
+  </li>
+  <li class="node" data-node-id="12" data-x="847.6613792563369" data-y="-107.69259513998927">
+    <span class="caption">OpenSpace</span>
+  </li>
+  <li class="node" data-node-id="13" data-x="810.0121371835319" data-y="64.17298118984675">
+    <span class="caption">Stairs</span>
+  </li>
+  <li class="node" data-node-id="14" data-x="558.9463879775097" data-y="167.09426911136256">
+    <span class="caption">Corridor</span>
+  </li>
+  <li class="node" data-node-id="15" data-x="934.8286540724561" data-y="167.09426911136256">
+    <span class="caption">MeetingRoom</span>
+  </li>
+  <li class="node" data-node-id="16" data-x="893.6042232411435" data-y="423.4561545632103">
+    <span class="caption">OpenSpace</span>
+  </li>
+  <li class="node" data-node-id="17" data-x="254.38882984834618" data-y="167.09426911136256">
+    <span class="caption">OpenSpace</span>
+  </li>
+  <li class="node" data-node-id="18" data-x="747.9603516200827" data-y="535.3064968496717">
+    <span class="caption">OpenSpace</span>
+  </li>
+  <li class="node" data-node-id="19" data-x="393.18026194853013" data-y="291.80250386428764">
+    <span class="caption">OpenSpace</span>
+  </li>
+  <li class="node" data-node-id="20" data-x="810.0121371835319" data-y="230.04955250949126">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="21" data-x="723.6025782294445" data-y="-4.997542580181257">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="22" data-x="439.5715426607742" data-y="-4.997542580181257">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="23" data-x="586.1661073332343" data-y="366.88859990573764">
+    <span class="caption">MeetingRoom</span>
+  </li>
+  <li class="node" data-node-id="24" data-x="747.9603516200827" data-y="264.0476655195095">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="25" data-x="769.4640489797087" data-y="128.20366334150182">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="26" data-x="747.9603516200827" data-y="366.88859990573764">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="27" data-x="334.12078666975907" data-y="467.59569382285036">
+    <span class="caption">Stairs</span>
+  </li>
+  <li class="node" data-node-id="28" data-x="439.5715426607742" data-y="467.59569382285036">
+    <span class="caption">Stairs</span>
+  </li>
+  <li class="node" data-node-id="29" data-x="61.403850690520905" data-y="504.79541701046463">
+    <span class="caption">Corridor</span>
+  </li>
+  <li class="node" data-node-id="30" data-x="289.421860965178" data-y="575.6242461995006">
+    <span class="caption">Lobby</span>
+  </li>
+  <li class="node" data-node-id="31" data-x="-179.87135876734595" data-y="575.6242461995006">
+    <span class="caption">OpenSpace</span>
+  </li>
+  <li class="node" data-node-id="32" data-x="212.01622882373744" data-y="658.7749091979647">
+    <span class="caption">OpenSpace</span>
+  </li>
+  <li class="node" data-node-id="33" data-x="-137.13784800969887" data-y="191.4850747827542">
+    <span class="caption">OpenSpace</span>
+  </li>
+  <li class="node" data-node-id="34" data-x="-16.37704764296537" data-y="658.7749091979647">
+    <span class="caption">OpenSpace</span>
+  </li>
+  <li class="node" data-node-id="35" data-x="289.421860965178" data-y="393.10737732259946">
+    <span class="caption">Kitchen</span>
+  </li>
+  <li class="node" data-node-id="36" data-x="108.54623643407147" data-y="264.0476655195095">
+    <span class="caption">MeetingRoom</span>
+  </li>
+  <li class="node" data-node-id="37" data-x="-179.87135876734595" data-y="337.6595816382748">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="38" data-x="-16.37704764296537" data-y="264.0476655195095">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="39" data-x="254.38882984834618" data-y="291.80250386428764">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="40" data-x="-238.30309456299912" data-y="467.59569382285036">
+    <span class="caption">Stairs</span>
+  </li>
+  <li class="node" data-node-id="41" data-x="-238.30309456299912" data-y="366.88859990573764">
+    <span class="caption">Stairs</span>
+  </li>
+  <li class="node" data-node-id="42" data-x="-449.9275267901904" data-y="366.88859990573764">
+    <span class="caption">Corridor</span>
+  </li>
+  <li class="node" data-node-id="43" data-x="-238.30309456299912" data-y="191.4850747827542">
+    <span class="caption">MeetingRoom</span>
+  </li>
+  <li class="node" data-node-id="44" data-x="-413.59988720645094" data-y="167.09426911136256">
+    <span class="caption">MeetingRoom</span>
+  </li>
+  <li class="node" data-node-id="45" data-x="-553.0071528633646" data-y="167.09426911136256">
+    <span class="caption">MeetingRoom</span>
+  </li>
+  <li class="node" data-node-id="46" data-x="-644.5654750558778" data-y="230.04955250949126">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="47" data-x="-671.7841049439129" data-y="443.98876414579473">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="48" data-x="-671.7841049439129" data-y="337.6595816382748">
+    <span class="caption">WC</span>
+  </li>
+  <li class="node" data-node-id="49" data-x="-671.7841049439129" data-y="535.3064968496717">
+    <span class="caption">OpenSpace</span>
+  </li>
+  <li class="node" data-node-id="50" data-x="-360.1834592768226" data-y="535.3064968496717">
+    <span class="caption">OpenSpace</span>
+  </li>
+  <li class="node" data-node-id="51" data-x="-333.0513155524109" data-y="167.09426911136256">
+    <span class="caption">Office</span>
+  </li>
+  <li class="node" data-node-id="52" data-x="-507.16910328584555" data-y="535.3064968496717">
+    <span class="caption">Office</span>
+  </li>
+  <li class="relationship" data-from="2" data-to="3"></li>
+  <li class="relationship" data-from="3" data-to="4"></li>
+  <li class="relationship" data-from="2" data-to="4"></li>
+  <li class="relationship" data-from="0" data-to="2"></li>
+  <li class="relationship" data-from="2" data-to="1"></li>
+  <li class="relationship" data-from="1" data-to="5"></li>
+  <li class="relationship" data-from="1" data-to="6"></li>
+  <li class="relationship" data-from="1" data-to="7"></li>
+  <li class="relationship" data-from="1" data-to="8"></li>
+  <li class="relationship" data-from="4" data-to="9"></li>
+  <li class="relationship" data-from="9" data-to="10"></li>
+  <li class="relationship" data-from="9" data-to="11"></li>
+  <li class="relationship" data-from="4" data-to="12"></li>
+  <li class="relationship" data-from="12" data-to="13"></li>
+  <li class="relationship" data-from="13" data-to="14"></li>
+  <li class="relationship" data-from="5" data-to="14"></li>
+  <li class="relationship" data-from="14" data-to="16"></li>
+  <li class="relationship" data-from="14" data-to="17"></li>
+  <li class="relationship" data-from="14" data-to="18"></li>
+  <li class="relationship" data-from="14" data-to="19"></li>
+  <li class="relationship" data-from="14" data-to="20"></li>
+  <li class="relationship" data-from="14" data-to="21"></li>
+  <li class="relationship" data-from="14" data-to="22"></li>
+  <li class="relationship" data-from="14" data-to="15"></li>
+  <li class="relationship" data-from="14" data-to="23"></li>
+  <li class="relationship" data-from="14" data-to="24"></li>
+  <li class="relationship" data-from="14" data-to="25"></li>
+  <li class="relationship" data-from="14" data-to="26"></li>
+  <li class="relationship" data-from="14" data-to="27"></li>
+  <li class="relationship" data-from="14" data-to="28"></li>
+  <li class="relationship" data-from="27" data-to="29"></li>
+  <li class="relationship" data-from="28" data-to="30"></li>
+  <li class="relationship" data-from="30" data-to="29"></li>
+  <li class="relationship" data-from="29" data-to="31"></li>
+  <li class="relationship" data-from="29" data-to="32"></li>
+  <li class="relationship" data-from="29" data-to="33"></li>
+  <li class="relationship" data-from="29" data-to="34"></li>
+  <li class="relationship" data-from="29" data-to="35"></li>
+  <li class="relationship" data-from="29" data-to="36"></li>
+  <li class="relationship" data-from="29" data-to="37"></li>
+  <li class="relationship" data-from="29" data-to="38"></li>
+  <li class="relationship" data-from="29" data-to="39"></li>
+  <li class="relationship" data-from="29" data-to="40"></li>
+  <li class="relationship" data-from="29" data-to="41"></li>
+  <li class="relationship" data-from="41" data-to="42"></li>
+  <li class="relationship" data-from="40" data-to="42"></li>
+  <li class="relationship" data-from="42" data-to="43"></li>
+  <li class="relationship" data-from="42" data-to="44"></li>
+  <li class="relationship" data-from="42" data-to="45"></li>
+  <li class="relationship" data-from="42" data-to="46"></li>
+  <li class="relationship" data-from="42" data-to="47"></li>
+  <li class="relationship" data-from="42" data-to="48"></li>
+  <li class="relationship" data-from="42" data-to="49"></li>
+  <li class="relationship" data-from="42" data-to="50"></li>
+  <li class="relationship" data-from="42" data-to="51"></li>
+  <li class="relationship" data-from="42" data-to="52"></li>
+</ul>
