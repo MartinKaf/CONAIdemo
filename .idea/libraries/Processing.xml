@@ -19,6 +19,8 @@
       <root url="jar://$PROJECT_DIR$/../conai-master/AI layout prediction/lib/jogl-all-natives-windows-amd64.jar!/" />
       <root url="jar://$PROJECT_DIR$/../conai-master/AI layout prediction/lib/jogl-all-natives-windows-i586.jar!/" />
       <root url="jar://$PROJECT_DIR$/../conai-master/AI layout prediction/lib/jogl-all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../conai-master/AI layout prediction/lib/peasycam.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../conai-master/AI layout prediction/lib/peasy-math.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

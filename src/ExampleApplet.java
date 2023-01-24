@@ -18,6 +18,7 @@ import java.io.*;
 
 import java.awt.*;
 import java.util.ArrayList;
+import peasy.*;
 
 public class ExampleApplet extends PApplet {
 
@@ -28,7 +29,7 @@ public class ExampleApplet extends PApplet {
     @Override
     public void settings() {
         // TODO: Customize screen size and so on here
-        size (1000,800,P2D);
+        size (1000,1000,P2D);
         //fullScreen();
     }
     // globals
@@ -75,8 +76,8 @@ public class ExampleApplet extends PApplet {
     // int sizeHall = 50;
     // int sizeConferenceRoom = 60;
     // int sizeStorage = 30;
-    String[] roomNames = {"Lobby","Office","WC","ConferenceRoom","Kitchen","Storage","Hall","Stairs","Corridor"};
-    int[] sizeRooms = {30,50,20,80,20,20,80,30,60};
+    String[] roomNames = {"Storage","Aquaponic","Microgreens","Vertical_Farm","Kitchen","WC","Hall","Stairs","Corridor"};
+    int[] sizeRooms = {24,24,24,12,12,12,12,12,12};
     int[] coloursRooms = {color(255,0,0),color(0,0,255),color(0,255,0),
             color(255,255,0),color(255,88,227),color(200,200,200),color(0,255,220),color(255,0,255),color(150,150,150) };
     float bounceFact = 2;
@@ -110,6 +111,8 @@ public class ExampleApplet extends PApplet {
     GLabel label6;
     GTextField textfield1;
     GCheckbox checkbox2;
+    //canvases
+    GViewPeasyCam view1;
 
     @Override
     public void setup() {
@@ -134,6 +137,9 @@ public class ExampleApplet extends PApplet {
         pg = createGraphics((int)pgSize,(int)pgSize,P2D);
         scalePG = pgSize/(float)width;
         textMode(SCREEN);
+        //++++++++++++++++ canvases
+        view1 = new GViewPeasyCam(this, site.offset+800, site.offset, 500, 500, 200);
+        PeasyCam pcam = view1.getPeasyCam();
 
         //uploadGraph();
     }
@@ -193,6 +199,9 @@ public class ExampleApplet extends PApplet {
                 }
             }
         }
+        // draw canvas
+        updateView1();
+
     }
 
 
@@ -1734,5 +1743,195 @@ public class ExampleApplet extends PApplet {
         uploadGraph();
     } //_CODE_:button1:592021:
 
+    void updateView1() {
+        // ############################################################
+        // Get the graphics context and camera
+        PGraphics pg = view1.getGraphics();
+        PeasyCam pcam = view1.getPeasyCam();
+        //pcam.lookAt(site.centroid.x,site.centroid.y,site.centroid.z);
+        //println(pcam.getLookAt());
+        // ############################################################
+        // Initialise the canvas
+        pg.beginDraw();
+        pg.resetMatrix();
+        // ############################################################
+        // World view lighting here (optional)
+        pg.ambientLight(100, 100, 100);
+        pg.directionalLight(220, 220, 0, 0.8f, 1, -1.2f);
 
+        // ############################################################
+        // set model view - using camera state
+        pcam.feed();
+
+        // ############################################################
+        // Model view lighting here (optional)
+
+        // ############################################################
+        // Code to draw canvas
+        pg.background(0, 0, 0);
+
+        //pg.fill(255, 200, 128);
+        //pg.stroke(255, 0, 0);
+        //pg.strokeWeight(4);
+        //pg.box(80);
+
+        // ############################################################
+        //+++++++++++++++++++++++++++++++++++++++++++++++
+        // draw connectivy graph 3d
+        {
+            pg.scale(0.1f);
+            //+++++++++++++++++++++++++++ draw nodes + text nodes
+            Particle part;
+            for (int i = 0; i < physics.numberOfParticles(); i++) {
+                part = physics.getParticle(i);
+                part.position().setZ(0);
+                part.circlePoints();
+
+                {
+                    pg.strokeWeight(part.strW);
+                    //fill((part.col),part.transp);
+                    pg.fill((part.col),80);
+                    pg.stroke((part.str));
+                }
+
+                pg.pushMatrix();
+                //pg.translate(site.centroid.x,site.centroid.y);
+                //pg.stroke(255);
+                //pg.line(part.position().x(), part.position().y(),part.position().z(),0,0,0);
+                //pg.scale(0.1f);
+                pg.translate(part.position().x(), part.position().y(),part.position().z());
+                //println(part.position().x() + " " + part.position().y() + part.position().y());
+                //+++ellipse property start
+                // fill(0,0,255); // node not selected in 2d
+                //strokeWeight(1f);
+                //stroke(255,255,0);
+                if (part.isFree()==false){
+                    //fill(255,80);
+                    pg.stroke(0,255,240,80);
+                    pg.strokeWeight(2);
+                    //ellipse(0, 0, (part.realCircle +5), (part.realCircle +5));
+                }
+                pg.fill(255,80);
+                //pg.box(80);
+                pg.ellipse(0, 0, part.realCircle, part.realCircle);
+                pg.fill((part.col),80);
+                //pg.box(80);
+                pg.ellipse(0, 0, part.realCircle, part.realCircle);
+                //+++ellipse property end
+                if (part == physics.getSelectedNode()) {
+                    pg.fill(255,0,0);
+                    pg.strokeWeight(0.1f);
+                    pg.stroke(0);
+                    pg.ellipse(0, 0, part.realCircle/2, part.realCircle/2);
+                }
+                //  /*  if (drawText)
+                {
+                    //textFont(font, 14);
+                    pg.textAlign(CENTER, CENTER);
+                    pg.fill(textCol);
+                    pg.text(part.theText, 0, 0);
+                    pg.text(part.area/(scale*scale), 0, 10);
+                    //text((int)part.position().x() + "," + (int)part.position().y() + "," + (int)part.position().z(), 0, -30);
+                }// */
+
+                pg.popMatrix();
+
+            }
+//+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+            pg.fill(0, 80.0F);
+            pg.noStroke();
+            //stroke(fg);
+            pg.strokeWeight(5.0F);
+
+            pg.noFill();
+            int check = 0;
+
+            // +++++++++++++ draw Links
+            Particle sel = physics.getSelectedNode();
+            for (int i = 0; i < physics.numberOfSprings(); i++) {
+                Spring link = physics.getSpring(i);
+                Particle one = link.getOneEnd();
+                Particle two = link.getTheOtherEnd();
+                pg.stroke((link.col),link.transp);
+                if (sel == one || sel == two) {
+                    //  if (!freeze)
+                    //      strokeWeight(10);
+                    // else
+                    pg.strokeWeight(5);
+                }
+                else
+                {
+                    float weight = (float) (1 + (link.currentLength()- link.restLength()) * 0.5);
+                    if (weight  < 1) weight = 1;
+                    pg.strokeWeight(1);
+                }
+
+                pg.line(link.getOneEnd().position().x(), link.getOneEnd()
+                        .position().y(), link.getTheOtherEnd().position()
+                        .x(), link.getTheOtherEnd().position().y());
+
+                if (link.isFixed()) {
+                    pg.stroke (0,210,250,20);
+                    pg.strokeWeight(25);
+                    pg.line(link.getOneEnd().position().x(), link.getOneEnd()
+                            .position().y(), link.getTheOtherEnd().position()
+                            .x(), link.getTheOtherEnd().position().y());
+                }
+
+
+            }
+            if (physics.getSelectedLink() != null) {
+                Spring picked = physics.getSelectedLink();
+                //if (freeze)strokeWeight(5);
+                //else
+                pg.strokeWeight(20);
+                pg.stroke(255,0,0,80);
+                pg.line(picked.getOneEnd().position().x(), picked.getOneEnd()
+                        .position().y(), picked.getTheOtherEnd().position()
+                        .x(), picked.getTheOtherEnd().position().y());
+            }
+            // ++++++++++++++++
+
+            //stroke(bg);
+            pg.strokeWeight(1.0F);
+
+            pg.noTint();
+            pg.noFill();
+            pg.stroke(255,0,0,80);
+            //if (freeze)strokeWeight(5);
+            //else
+            pg.strokeWeight(15.0F);
+
+            if (in >= 0 && keyValue==4) {
+
+                pg.line(physics.getParticle(in).position().x(), physics
+                        .getParticle(in).position().y(), mouseX, mouseY);
+            }
+
+        }
+
+
+
+
+
+
+        //++++++++++++++++++++++++++++++++++++++++++++++++
+        // Demonstrates use of the PeaseyCam HUD feature
+        pcam.beginHUD();
+        pg.rectMode(CORNER);
+        pg.noStroke();
+        //pg.fill(0);
+        //pg.rect(0, 0, view1.width(), 30);
+        pg.fill(255, 255, 0);
+        pg.textSize(18);
+        pg.textAlign(CENTER, CENTER);
+        //pg.text("Using Worldview lighting", 0, 0, view1.width(), 30);
+        pcam.endHUD();
+
+        // ############################################################
+        // We are done!!!
+        pg.endDraw();
+    }
 }
